@@ -10,7 +10,7 @@ conf:
     group_id: 1
   keystone:
     auth_url:
-    username: warre
+    username: taynac
     project_name: service
     memcached_servers: []
 
