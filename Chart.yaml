@@ -2,9 +2,9 @@ apiVersion: v2
 name: taynac
 description: A Helm chart for taynac
 type: application
-version: 0.2.0
+version: 0.2.1
 appVersion: 0.1.0-8-g28915d2
 dependencies:
 - name: common
   repository: oci://registry-1.docker.io/bitnamicharts
-  version: 2.22.0
+  version: 2.23.0
