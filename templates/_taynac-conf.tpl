@@ -1,5 +1,8 @@
 {{- define "taynac-conf" }}
 
+[oslo_middleware]
+enable_proxy_headers_parsing=true
+
 [freshdesk]
 domain = {{ .Values.conf.freshdesk.domain }}
 email_config_id = {{ .Values.conf.freshdesk.email_config_id }}
