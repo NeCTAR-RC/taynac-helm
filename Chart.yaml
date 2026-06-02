@@ -2,7 +2,7 @@ apiVersion: v2
 name: taynac
 description: A Helm chart for taynac
 type: application
-version: 2.0.4
+version: 2.0.5
 appVersion: 1.0.0-7-ga250506
 dependencies:
 - name: common
