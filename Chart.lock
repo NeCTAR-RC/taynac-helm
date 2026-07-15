@@ -4,6 +4,6 @@ dependencies:
   version: 2.41.0
 - name: nectarlib
   repository: oci://registry.rc.nectar.org.au/nectar-helm
-  version: 4.1.0
-digest: sha256:b8eb7c396235b0888d5bcd56bcd221c43a7cfae61c0a0549e8b51c50ae440722
-generated: "2026-07-14T23:33:41.01382357Z"
+  version: 4.2.0
+digest: sha256:fbdc5d679db452ab7c25eca46729447f891ebd8f55d704310b4abec2d6522eb4
+generated: "2026-07-15T04:51:11.792329042Z"
