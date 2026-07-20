@@ -20,4 +20,7 @@ auth_type=password
 memcached_servers={{ join "," .Values.conf.keystone.memcached_servers }}
 {{- end }}
 
+[sentry]
+environment={{ .Values.conf.sentry.environment }}
+
 {{- end }}

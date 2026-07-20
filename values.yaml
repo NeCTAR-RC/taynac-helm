@@ -13,6 +13,8 @@ conf:
     username: taynac
     project_name: service
     memcached_servers: []
+  sentry:
+    environment: production
 
 vault:
   role: k8s
