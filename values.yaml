@@ -13,6 +13,12 @@ conf:
     username: taynac
     project_name: service
     memcached_servers: []
+  # Overrides for resolving recipients from a keystone project_id.
+  # Unset options use the service defaults:
+  #   manager_role: tenantmanager
+  #   member_role: member
+  #   cc_limit: 49
+  identity: {}
   sentry:
     environment: production
 

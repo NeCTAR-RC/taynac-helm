@@ -12,6 +12,8 @@ vault.hashicorp.com/agent-inject-template-secrets.conf: |
   {{ print "{{- with secret \"" .Values.vault.settings_secret "\" -}}" }}
   {{ print "[flask]" }}
   {{ print "secret_key={{ .Data.data.secret_key }}" }}
+  {{ print "[service_auth]" }}
+  {{ print "password={{ .Data.data.keystone_password }}" }}
   {{ print "[keystone_authtoken]" }}
   {{ print "password={{ .Data.data.keystone_password }}" }}
   {{ print "[freshdesk]" }}

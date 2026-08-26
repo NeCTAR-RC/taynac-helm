@@ -8,6 +8,27 @@ domain = {{ .Values.conf.freshdesk.domain }}
 email_config_id = {{ .Values.conf.freshdesk.email_config_id }}
 group_id = {{ .Values.conf.freshdesk.group_id }}
 
+[service_auth]
+auth_url={{ .Values.conf.keystone.auth_url }}
+username={{ .Values.conf.keystone.username }}
+user_domain_name=Default
+system_scope=all
+auth_type=password
+
+{{- with .Values.conf.identity }}
+
+[identity]
+{{- with .manager_role }}
+manager_role={{ . }}
+{{- end }}
+{{- with .member_role }}
+member_role={{ . }}
+{{- end }}
+{{- with .cc_limit }}
+cc_limit={{ . }}
+{{- end }}
+{{- end }}
+
 [keystone_authtoken]
 auth_url={{ .Values.conf.keystone.auth_url }}
 www_authenticate_uri={{ .Values.conf.keystone.auth_url }}
